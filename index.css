@@ -1,0 +1,252 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: myFirstFont;
+}
+.zuri{
+    margin:0 60px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+.zuri p{
+    font-style: italic;
+    color: rgb(78, 78, 172);
+    margin-left: 10px;
+}
+.zuri_logo{
+    height: 60px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid rgb(78, 78, 172);
+}
+.zuri_logo a img{
+    height: 100%;
+}
+button{
+    font-size: 15px;
+    border: 1px solid rgb(82, 79, 79);
+    padding: 5px;
+    cursor: pointer;
+    box-shadow:3px 3px rgb(165, 162, 162);
+    margin-top: 20px;
+}
+.task1::before{
+    width:90%;
+    height: 2px;
+    background-color: rgb(184, 181, 181);
+    display: flex;
+    position: absolute;
+    content: "";
+}
+a{
+    color: rgb(65, 65, 163);
+}
+/* header{
+    color: rgb(10, 10, 175);
+} */
+.task1{
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.task1 h3{
+    padding-top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+.resume{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+}
+.right-side{
+    flex:1;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.right-side .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-side{
+    flex:2;
+}
+.right-side .image{
+    width:200px;
+    height:200px;
+    border:3px solid rgb(212, 211, 218);
+    border-radius: 50%;
+}
+.right-side .skills ul{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.other_details{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.other_details i,.other_details p.motto i{
+    padding-right: 20px;
+}
+header{
+    font-size:40px;
+    text-decoration:bold;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+/* .line{
+    position: relative;
+    width: 250px;
+}
+.line::after{
+    width:100%;
+    height: 2px;
+    background-color: blue;
+    display: flex;
+    position: absolute;
+    content: "";
+} */
+ul.languages{
+    padding: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.work_experience{
+    padding-top: 20px;
+}
+.work_experience header{
+    padding-bottom: 20px;
+}
+.work_experience .category1,.category2,.category3{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+.work_experience .category1 .location1,.category2 .location2,.category3 .location3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.education .degrees{
+    padding-top: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile_details{
+    display: none;
+}
+@media (min-width:700px) and (max-width:900px) {
+    .right-side{
+        padding-right: 20px;
+    }
+}
+@media (max-width:700px) {
+    .resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-side .skills,.right-side .other_details{
+        display: none;
+    }
+    .mobile_details{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        height: 200px;
+        justify-content: space-around;
+        align-self: flex-start;
+    }
+    .mobile_details i,.mobile_details p.motto i{
+        padding-right: 20px;
+    }
+    .brief_introduction{
+        padding-top: 30px;
+    }
+    .brief_introduction header{
+        padding-bottom: 10px;
+    }
+    .line::after{
+        width:100%;
+        height: 2px;
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        position: absolute;
+        content: "";
+        display: none;
+    }
+    .left-side{
+        position: relative;
+        width: 100%;
+    }
+    .resume .left-side::after{
+        width:100%;
+        height: 2px;
+        background-color: rgb(133, 127, 127);
+        display: flex;
+        position: absolute;
+        align-items: center;
+        content: "";
+        margin-top: 20px;
+    }
+    ul.languages{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 180px;
+    }
+    .work_experience{
+        padding-bottom: 20px;
+    }
+    .work_experience .category1 h3,.category2 h3,.category3 h3{
+        padding-right: 10px;
+        padding-bottom: 8px;
+    }
+    .contents{
+        line-height: 30px;
+    }
+    header{
+        font-size:30px;
+        text-decoration:'bold'
+    }
+    .work_experience .category1,.category2,.category3{
+        height: 100px;
+    }
+    .zuri{
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="zuri">
+        <div class="zuri_logo">
+            <a  href="https://internship.zuri.team"><img src="download.jpg" target="_blank" src="zuri's logo"/></a>
+        </div>
+        <p>The HNG Internship: The biggest remote software developer internship in Nigeria</p>
+    </div>
+    <div class="resume">
+        <div class="right-side">
+            <img class="image" src="Passport.jpg" alt="my_passport"/>
+            <div class="info">
+                <h1>Esther Adeyemi</h1>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="skills">
+                <ul>
+                    <li>Negotiation Skills and Team Work</li>
+                    <li>Graphics Design with PhotoShop</li>
+                    <li>Programming skills</li>
+                    <li><b>Great Team player</b></li>
+                    <li>Good Interpersonal Skills</li>
+                </ul>
+            </div>
+            <div class="other_details">
+                <a href="mailto:estheradeyemi@gmail.com" class="line"><i class="fa fa-envelope-o"></i>estheradeyemi@gmail.com</a>
+                <a href="Nigeria" class="line"><i class="fa fa-map-marker"></i>Nigeria, Lagos</a>
+                <a href="tel:08091960477" class="line"><i class="fa fa-phone"></i>08091960477</a>
+                <p class="motto line"><i class="fa fa-thumb-tack"></i>Motto:Never give up</i></p>
+            </div>
+        </div>
+        <div class="left-side">
+            <div class="brief_introduction">
+                <header>Professional Summary</header>
+                <p class="contents">As a developer, I have a lot of experience working as an intern, and most of these
+                    experiences I got from <b>different teams</b> I started off my web development journey
+                    from the year 2020, I participated in DSC web development training and successfully finished it. Since I had
+                    prior Knowledge i went into JSMinna internship where i was able to improve my skills. Currently hoping
+                    to get new experience and learn more in any team might be.
+                </p>
+                <br/>
+                <p>I am skilled with the following programming languages:</p>
+                <ul class="languages">
+                    <li>ReactJS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>CSS</li>
+                    <li>Sass</li>
+                </ul>
+            </div>
+            <div class="work_experience">
+                <header>Work Experience</header>
+                <div class="category1">
+                    <div>
+                        <h3>Intern Frontend Developer</h3>
+                        <p class="place">JSMinna</p>
+                    </div>
+                    <div class="location1">
+                        <p>March 2020</p>
+                    </div>
+                </div>
+                <div class="category2">
+                    <div>
+                        <h3>Junior Frontend Developer</h3>
+                        <p class="place">DSC for beginners</p>
+                    </div>
+                    <div class="location2">
+                        <p>June 2020</p>
+                    </div>
+                </div>
+                <div class="category3">
+                    <div>
+                        <h3>Senior Frontend Developer</h3>
+                        <p class="place">hackX organized by ECX unilag</p>
+                    </div>
+                    <div class="location3">
+                        <p>September 2020</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <header>Education and Qualifications</header>
+                <div class="degrees">
+                    <p>BEng: Chemical Engineering, University of Lagos</p>
+                    <p>HSE: Deeprimex Consulting Levels 1,2 and 3</p>
+                    <p>Divine Help College (DHC), Odogunyan, Lagos</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_details">
+            <a href="#estheradeyemi@gmail.com" class="line"><i class="fa fa-envelope-o"></i>estheradeyemi@gmail.com</a>
+            <a href="#" class="line"><i class="fa fa-map-marker"></i>Nigeria, Lagos</a>
+            <a href="#08091960477" class="line"><i class="fa fa-phone"></i>08091960477</a>
+            <p class="motto line"><i class="fa fa-thumb-tack"></i>Motto:Never give up</i></p>
+        </div>
+    </div>
+    <div class="task1">
+        <div>
+            Task 1:(Check below for the printed Name) <button onclick="printName()">Print my Full Name</button>
+            <h3>The HNG Internship brings together great minds, this internship helps people learn how to work in teams, acquiring
+                experience from different people. To learn more visit: <a href="https://internship.zuri.team">Zuri Internship</a>
+            </h3>
+        </div>
+     </div>
+    <script>
+        function printName(){
+            var firstName="Esther"
+            var lastName="Adeyemi"
+            var fullName=document.createTextNode(firstName +" "+ " " + lastName);
+            document.body.appendChild(fullName);
+        }
+    </script>
+</body>
+</html>

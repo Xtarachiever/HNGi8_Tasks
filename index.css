@@ -1,6 +1,15 @@
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
+
+    
+ }
+ :root{
+    --blue_color: #2f80ed;
+    --green_color:#b2ffda;
+    --pink_color:#fad0c9ff;
+    --brown_color:#6e6e6dff;
+    --orange:rgb(250, 113, 21);
  }
 *{
     padding:0;
@@ -8,26 +17,38 @@
     box-sizing: border-box;
     font-family: myFirstFont;
 }
+body{
+    overflow: none;
+}
 .zuri{
-    margin:0 60px;
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 50px;
+    align-items: center;
+    padding: 40px 0;
 }
 .zuri p{
+    color:var(--pink_color);
     font-style: italic;
-    color: rgb(78, 78, 172);
-    margin-left: 10px;
 }
-.zuri_logo{
-    height: 60px;
-    width: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid rgb(78, 78, 172);
+.zuri .links{
+    font-style: none;
 }
-.zuri_logo a img{
-    height: 100%;
+.info h1{
+    text-align: center;
+}
+.zuri .logos{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.zuri .logos img{
+    width: 120px;
+    height: 50px;
+}
+.task1{
+    background-color: rgb(82, 139, 141);
+    padding: 40px;
+    width: 100%;
 }
 button{
     font-size: 15px;
@@ -37,20 +58,21 @@ button{
     box-shadow:3px 3px rgb(165, 162, 162);
     margin-top: 20px;
 }
-.task1::before{
-    width:90%;
-    height: 2px;
-    background-color: rgb(184, 181, 181);
-    display: flex;
-    position: absolute;
-    content: "";
+.footer_line{
+    border-left: 2px solid white;
+    position: relative;
+    width: 1px;
+    height: 800px;
+    flex: 0.2;
 }
-a{
-    color: rgb(65, 65, 163);
+a, .motto{
+    color:var(--brown_color);
+    text-decoration: none;
+    font-weight: 600;
 }
-/* header{
-    color: rgb(10, 10, 175);
-} */
+.task1 a{
+    color: white;
+}
 .task1{
     padding: 10px;
     position: relative;
@@ -64,25 +86,29 @@ a{
     text-decoration: none;
     font-weight: 500;
 }
-a{
-    text-decoration: none;
-}
 a:hover{
-    color:red;
+    color:rgb(55, 55, 158);
 }
 .resume{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 20px;
+    overflow-x: hidden;
 }
 .right-side{
     flex:1;
     display: flex;
-    align-items: flex-start;
-    margin-left: 20px;
+    align-items: center;
     flex-direction: column;
+    background-color: var(--orange);
+    padding: 20px 0;
+    height: 800px;
+    margin-right: 20px;
+    padding-right: 0;
+}
+.right-side li{
+    color: white;
 }
 .right-side .info{
     display: flex;
@@ -91,6 +117,9 @@ a:hover{
 }
 .left-side{
     flex:2;
+}
+.left-side header{
+    color: var(--orange);
 }
 .right-side .image{
     width:200px;
@@ -124,23 +153,12 @@ img{
     object-fit: cover;
     width: 100%;
 }
-/* .line{
-    position: relative;
-    width: 250px;
-}
-.line::after{
-    width:100%;
-    height: 2px;
-    background-color: blue;
-    display: flex;
-    position: absolute;
-    content: "";
-} */
 ul.languages{
     padding: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 .work_experience{
     padding-top: 20px;
@@ -148,10 +166,14 @@ ul.languages{
 .work_experience header{
     padding-bottom: 20px;
 }
+.work_experience div{
+    align-items: flex-start;
+}
 .work_experience .category1,.category2,.category3{
     display: flex;
     justify-content: space-between;
     height: 80px;
+    padding-right:70px;
 }
 .work_experience .category1 .location1,.category2 .location2,.category3 .location3{
     display: flex;
@@ -172,13 +194,21 @@ ul.languages{
     .right-side{
         padding-right: 20px;
     }
+    ul.languages{
+        justify-content: space-between;
+    }
 }
 @media (max-width:700px) {
     .resume{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: -30px;
+        margin-top: 20px;
+    }
+    .right-side{
+        background-color: var(--orange);
+        width: 100%;
+        padding-right: 20px;
     }
     .right-side .skills,.right-side .other_details{
         display: none;
@@ -248,9 +278,10 @@ ul.languages{
         height: 100px;
     }
     .zuri{
-        margin: 10px 0;
+        flex-direction: column;
+        padding-top: 10px;
     }
-    .task1 div{
-        margin-top: 20px
+    .zuri p{
+        padding-top: 20px;
     }
 }

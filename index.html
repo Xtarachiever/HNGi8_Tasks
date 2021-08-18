@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <div class="zuri">
-        <div class="zuri_logo">
-            <a  href="https://internship.zuri.team"><img src="download.jpg" target="_blank" src="zuri's logo"/></a>
-        </div>
-        <p>The HNG Internship: The biggest remote software developer internship in Nigeria</p>
+    <div id="dialog" title="Full Name">
+       <p id="text"></p>
     </div>
     <div class="resume">
         <div class="right-side">
@@ -38,6 +39,7 @@
                 <p class="motto line"><i class="fa fa-thumb-tack"></i>Motto:Never give up</i></p>
             </div>
         </div>
+        <!-- <div class="footer_line"></div> -->
         <div class="left-side">
             <div class="brief_introduction">
                 <header>Professional Summary</header>
@@ -90,7 +92,7 @@
             <div class="education">
                 <header>Education and Qualifications</header>
                 <div class="degrees">
-                    <p>BEng: Chemical Engineering, University of Lagos</p>
+                    <p>BEngr: Chemical Engineering, University of Lagos (in progress)</p>
                     <p>HSE: Deeprimex Consulting Levels 1,2 and 3</p>
                     <p>Divine Help College (DHC), Odogunyan, Lagos</p>
                 </div>
@@ -104,20 +106,23 @@
         </div>
     </div>
     <div class="task1">
-        <div>
-            Task 1:(Check below for the printed Name) <button onclick="printName()">Print my Full Name</button>
-            <h3>The HNG Internship brings together great minds, this internship helps people learn how to work in teams, acquiring
-                experience from different people. To learn more visit: <a href="https://internship.zuri.team">Zuri Internship</a>
-            </h3>
+        <div class="zuri">
+            <div class="logos">
+                <img src="zuri-training-img.svg" target="_blank" src="zuri's logo"/>
+                <img src="hng_logo.jpeg" target="_blank" src="zuri's logo"/>
+                <!-- <img src="ingressive.png" target="_blank" src="zuri's logo"/> -->
+            </div>
+            <a href="https://internship.zuri.team" class="links">The HNG Internship:</a><p> The biggest remote software developer internship in Nigeria</p>
         </div>
      </div>
-    <script>
-        function printName(){
-            var firstName="Esther"
-            var lastName="Adeyemi"
-            var fullName=document.createTextNode(firstName +" "+ " " + lastName);
-            document.body.appendChild(fullName);
-        }
-    </script>
+     <script>
+     $( function() {
+         var firstName="Esther"
+         var lastName="Adeyemi"
+         var fulla=document.getElementById('text')
+         fulla.innerHTML=firstName + " "+ lastName
+       $( "#dialog").dialog();
+     } );
+     </script>
 </body>
 </html>

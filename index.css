@@ -1,3 +1,4 @@
+@media screen and (prefers-color-scheme: light) {
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
@@ -415,4 +416,5 @@ ul.languages li{
         color: var(--orange);
         font-weight: bold;
     }
+}
 }

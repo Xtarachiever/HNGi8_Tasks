@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="index.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="circle-progress.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
@@ -23,14 +24,20 @@
                 <h1>Esther Adeyemi</h1>
                 <p>Frontend Developer</p>
             </div>
-            <div class="skills">
-                <ul>
-                    <li>Negotiation Skills and Team Work</li>
-                    <li>Graphics Design with PhotoShop</li>
-                    <li>Programming skills</li>
-                    <li><b>Great Team player</b></li>
-                    <li>Good Interpersonal Skills</li>
-                </ul>
+            <div class="contact_me">
+                <h4><b>Contact Me</b></h4>
+                <div class="inputs">
+                    <input placeholder="Name" type="text" required/>
+                </div>
+                <div class="inputs">
+                    <input placeholder="Email" type="email"/>
+                </div>
+                <div class="inputs">
+                    <input placeholder="Subject" type="text"/>
+                </div>
+                <div class="inputs">
+                    <textarea placeholder="Message" rows="8"></textarea>
+                </div>
             </div>
             <div class="other_details">
                 <a href="mailto:estheradeyemi@gmail.com" class="line"><i class="fa fa-envelope-o"></i>estheradeyemi@gmail.com</a>
@@ -43,20 +50,37 @@
         <div class="left-side">
             <div class="brief_introduction">
                 <header>Professional Summary</header>
-                <p class="contents">As a developer, I have a lot of experience working as an intern, and most of these
-                    experiences I got from <b>different teams</b> I started off my web development journey
-                    from the year 2020, I participated in DSC web development training and successfully finished it. Since I had
-                    prior Knowledge i went into JSMinna internship where i was able to improve my skills. Currently hoping
-                    to get new experience and learn more in any team might be.
+                <div class="professional-skills">
+                    <ul class="professional-progress">
+                        <li>
+                            <div class="mh-progress mh-progress-circle" data-progress="65"></div>
+                            <div class="skill-name">Negotiation Skills</div>
+                        </li>
+                        <li>
+                            <div class="mh-progress mh-progress-circle" data-progress="75"></div>
+                            <div class="skill-name">Graphics Design Skills</div>
+                        </li>
+                        <li>
+                            <div class="mh-progress mh-progress-circle" data-progress="80"></div>
+                            <div class="skill-name">Programming Skills</div>
+                        </li>
+                        <li>
+                            <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                            <div class="skill-name">Interpersonal Skills</div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="contents">I have a lot of experience working as an intern, and most of these
+                    experiences I got from <b>different teams</b>.I am a dilligent and hardworking web developer with 1+ years experience.
                 </p>
                 <br/>
-                <p>I am skilled with the following programming languages:</p>
+                <h3 style="text-align: center;">My Programming Skills</h3>
                 <ul class="languages">
-                    <li>ReactJS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>CSS</li>
-                    <li>Sass</li>
+                    <li><span class="progress_bar bar1"></span><b>ReactJS &nbsp; (70%)</b></li>
+                    <li><span class="progress_bar bar2"></span><b>JavaScript &nbsp; (75%)</b></li>
+                    <li><span class="progress_bar bar3"></span><b>Bootstrap &nbsp; (80%)</b></li>
+                    <li><span class="progress_bar bar4"></span><b>CSS &nbsp; (65%)</b></li>
+                    <li><span class="progress_bar bar5"></span><b>Sass &nbsp; (60%)</b></li>
                 </ul>
             </div>
             <div class="work_experience">

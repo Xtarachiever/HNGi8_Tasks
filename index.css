@@ -105,30 +105,33 @@ a:hover{
     color:rgb(55, 55, 158);
 }
 /* Professional Summary */
-/* .professional-skills{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-} */
-.professional-progress{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
-}
-.professional-progress li{
-    display: inline-block;
-    /* margin: 0 auto; */
-    float: none;
-    text-align: center;
-    width: 15%;
-    margin-bottom: 30px;
+.professional-skills{
     margin: 10px;
+    overflow-x: hidden;
+}
+.mh-professional-progress{
+    display: flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.mh-professional-progress li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    width: 20%;
 }
 .mh-progress{
     margin-bottom: 10px;
     font: 900 1.14285/1;
     color: var(--orange);
+}
+.mh-progress path:nth-child(1){
+    stroke: rgba(252, 240, 240, 0.7);
+}
+.mh-progress path:nth-child(2){
+    stroke: var(--orange) !important;
 }
 /* end of progress_circle */
 .resume{
@@ -142,7 +145,7 @@ a:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
     padding-top: 40px;
     height: 1400px;
     margin-right: 50px;
@@ -207,7 +210,7 @@ ul.languages li{
     height: 4px;
     margin: 25px 0;
     position: absolute;
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
 }
 .bar1{
     width: 70%;
@@ -303,9 +306,6 @@ ul.languages li{
     padding-top: 20px;
 }
 @media (min-width:700px) and (max-width:900px) {
-    .professional-progress li{
-        width: 20%;
-    }
     .right-side{
         padding: 40px;
         min-height: 900px;
@@ -319,8 +319,8 @@ ul.languages li{
     }
 }
 @media (max-width:700px) {
-    .professional-progress li{
-        width: 20%;
+    .mh-professional-progress li{
+        width: 40%;
     }
     .resume{
         display: flex;
@@ -329,7 +329,7 @@ ul.languages li{
         justify-content: center;
     }
     .right-side{
-        background-color: var(--orange);
+        background-color: var(--orange) !important;
         width: 100%;
         margin-right:0;
         height: 20px;
@@ -403,7 +403,7 @@ ul.languages li{
     .contact_me{
         display: none;
     }
-    a{
+    a,.motto{
         color: var(--orange);
         font-weight: bold;
     }

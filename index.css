@@ -23,7 +23,9 @@
     margin:0;
  }
 .all{
-    height: 100%;
+    min-height: 100%;
+    border: 1px solid red;
+
 }
 p{
     font-size: 20px;
@@ -81,17 +83,15 @@ a{
 .info h1{
     text-align: center;
 }
-.zuri{
+.zuri .logos{
+    width: 400px;
     display: flex;
-    justify-content: space-around;
-    width: 90%;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-evenly;
 }
-.zuri  img{
-    width: 200px;
-    height: 70px;
-
+.zuri .logos img{
+    width: 120px;
+    height: 50px;
 }
 a, .motto{
     color:white;
@@ -176,7 +176,7 @@ a:hover{
 .left-side{
     flex: 2;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .left-side header{
     color: var(--orange);

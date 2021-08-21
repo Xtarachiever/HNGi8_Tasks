@@ -301,7 +301,7 @@ ul.languages li{
 }
 .education .degrees{
     padding-top: 20px;
-    height: 150px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -326,6 +326,9 @@ ul.languages li{
     }
 }
 @media (max-width:700px) {
+    .education .degrees{
+        height: 100px;
+    }
     .contact_me{
         display: none;
     }

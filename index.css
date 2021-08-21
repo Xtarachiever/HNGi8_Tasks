@@ -344,9 +344,12 @@ ul.languages li{
     }
 }
 @media (max-width:700px) {
+    p{
+        font-size: 18px;
+    }
     .education .degrees{
         padding-top: 20px;
-        height: 110px;
+        height: 130px;
     }
     .contact_me{
         display: none;

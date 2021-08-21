@@ -1,7 +1,6 @@
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
-
     
  }
  :root{
@@ -12,7 +11,8 @@
     --orange:rgb(250, 113, 21);
  }
  body{
-     overflow-x: hidden;
+    overflow-x: hidden !important;
+    width: 100%;
  }
  
 *{
@@ -210,11 +210,11 @@ ul.languages{
 }
 ul.languages li{
     list-style: none;
-    margin-top: 30px;
+    margin-top: 40px;
     position: relative;
 }
 .progress_bar{
-    height: 8px;
+    height: 6px;
     margin: 25px 0;
     position: absolute;
     background-color: var(--orange) !important;
@@ -326,9 +326,12 @@ ul.languages li{
     }
 }
 @media (max-width:700px) {
+    .contact_me{
+        display: none;
+    }
     .mh-professional-progress li{
         width: 40%;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     .progress_bar{
         margin: 30px 0;
@@ -417,5 +420,8 @@ ul.languages li{
     a,.motto{
         color: var(--orange);
         font-weight: bold;
+    }
+    .zuri  .logos{
+        width: 200px;
     }
 }

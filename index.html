@@ -14,18 +14,15 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <div id="dialog" title="Full Name">
-       <p id="text"></p>
-    </div>
     <div class="resume">
         <div class="right-side">
             <img class="image" src="Passport.jpg" alt="my_passport"/>
             <div class="info">
-                <h1>Esther Adeyemi</h1>
-                <p>Frontend Developer</p>
+                <h1 id="text" style="color: white;"></h1>
+                <p style="color: white;">Frontend Developer</p>
             </div>
             <div class="contact_me">
-                <h4><b>Contact Me</b></h4>
+                <h4 style="color: white;"><b>Contact Me</b></h4>
                 <div class="inputs">
                     <input placeholder="Name" type="text" required/>
                 </div>
@@ -96,7 +93,7 @@
                 </div>
                 <div class="category2">
                     <div>
-                        <h3>Junior Frontend Developer</h3>
+                        <h3>Intern Frontend Developer</h3>
                         <p class="place">DSC for beginners</p>
                     </div>
                     <div class="location2">
@@ -118,7 +115,6 @@
                 <div class="degrees">
                     <p>BEngr: Chemical Engineering, University of Lagos (in progress)</p>
                     <p>HSE: Deeprimex Consulting Levels 1,2 and 3</p>
-                    <p>Divine Help College (DHC), Odogunyan, Lagos</p>
                 </div>
             </div>
         </div>
@@ -145,7 +141,6 @@
          var lastName="Adeyemi"
          var fulla=document.getElementById('text')
          fulla.innerHTML=firstName + " "+ lastName
-       $( "#dialog").dialog();
      } );
      </script>
 </body>

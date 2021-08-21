@@ -15,11 +15,16 @@
     margin:0;
     box-sizing: border-box;
 }
- /* body,html{
+ body,html{
     width: 100%;
     height: 100%;
- } */
- 
+    overflow-x: hidden;
+        padding:0;
+    margin:0;
+ }
+.all{
+    height: 100%;
+}
 p{
     font-size: 20px;
 }
@@ -76,20 +81,17 @@ a{
 .info h1{
     text-align: center;
 }
-.zuri .logos{
-    width: 400px;
+.zuri{
     display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
 }
-.zuri .logos img{
-    width: 120px;
-    height: 50px;
-}
-.task1{
-    background-color: rgb(82, 139, 141);
-    padding: 40px;
-    width: 100%;
+.zuri  img{
+    width: 200px;
+    height: 70px;
+
 }
 a, .motto{
     color:white;
@@ -100,13 +102,14 @@ a, .motto{
 .task1 a{
     color: white;
 }
-.task1{
-    padding: 10px;
-    position: relative;
+.all .task1{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(82, 139, 141);
+    padding: 40px;
+    width: 100%;
 }
 .task1 h3{
     padding-top: 10px;
@@ -151,7 +154,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: auto;
+    position: relative;
 }
 .right-side{
     flex:1;
@@ -173,7 +176,7 @@ a:hover{
 .left-side{
     flex: 2;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .left-side header{
     color: var(--orange);
@@ -447,56 +450,3 @@ ul.languages li{
         width: 220px;
     }
 }
-/* @media (min-width:500px) and (min-height:1024px){
-    p,a,.motto,li,li b{
-        font-size: 28px;
-    }
-    h3{
-        font-size: 30px;
-    }
-    .education .degrees{
-        height: 140px;
-        padding-bottom: 20px;
-    }
-    .work_experience .category1,.category2,.category3{
-        height: 130px;
-    }
-    .progress_bar{
-        margin: 40px 0;
-    }
-    .left-side header{
-        font-size: 60px;
-    }
-    .mobile_details{
-        height: 250px;
-    }
-}
-@media (min-width:700px) and (min-height:1024px){
-    .right-side{
-        height: 2300px;
-    }
-    .education{
-        margin-top: 50px;
-    }
-    .contents{
-        margin-bottom: 30px;
-    }
-    .contact_me{
-        height: 800px;
-    }
-    input{
-        padding:20px 20px;
-    }
-    textarea{
-        padding: 30px 20px;
-    }
-    .other_details{
-        height: 300px;
-    }
-    p,a,.motto,li,li b{
-        font-size: 32px;
-    }
-    ::placeholder{
-        font-size: 22px;
-    }
-} */

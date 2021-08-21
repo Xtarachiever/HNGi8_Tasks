@@ -23,9 +23,7 @@
     margin:0;
  }
 .all{
-    min-height: 100%;
-    border: 1px solid red;
-
+    height: 100%;
 }
 p{
     font-size: 20px;

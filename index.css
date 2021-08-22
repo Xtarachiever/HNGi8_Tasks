@@ -85,7 +85,7 @@ a{
     text-align: center;
 }
 .zuri .logos{
-    min-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -529,7 +529,10 @@ ul.languages li{
         margin-top: 80px;
     }
     .zuri  .logos{
-        min-width: 60px;
+        width: 120px;
+    }
+    .zuri .logos .img{
+        width: 30%;
     }
 }
 @media (max-width:300px) {

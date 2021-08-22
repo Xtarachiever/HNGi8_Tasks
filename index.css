@@ -85,14 +85,14 @@ a{
     text-align: center;
 }
 .zuri .logos{
-    width: 20%;
+    width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
 }
 .zuri .logos img{
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 a, .motto{
@@ -483,9 +483,9 @@ ul.languages li{
     .left-side{
        display: flex;
        flex-direction: column;
-       margin: 0 10px;
+       margin: 0 20px;
        height: auto;
-       align-items: center;
+       /* align-items: center; */
     }
     li b{
         font-size: 16px;
@@ -538,13 +538,6 @@ ul.languages li{
     }
 }
 @media (max-width:300px) {
-    /* .mobile_details{
-        margin-top: 100px;
-        padding-left: 0;
-        display: flex;
-        width: 80%;
-        flex-wrap: wrap;
-    } */
     .mh-professional-progress li{
         width: 60%;
     }

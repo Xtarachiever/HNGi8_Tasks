@@ -506,7 +506,7 @@ ul.languages li{
         text-decoration:'bold'
     }
     .work_experience .category1,.category2,.category3{
-        height: 100px;
+        height: auto;
         padding-right: 0;
     }
     .zuri{
@@ -530,16 +530,32 @@ ul.languages li{
         margin-top:  30px;
         margin-bottom: 20px;
     }
-    /* .zuri  .logos{
-        width: 120px;
-        align-items: center;
-    } */
 }
 @media (max-width:300px) {
+    .mobile_details a,.mobile_details p,.motto{
+        font-size: 14px;
+    }
+    header{
+        font-size: 17px!important;
+    }
     .mh-professional-progress li{
         width: 60%;
     }
     .left-side{
+        width: 80%;
+    }
+    .mobile_details{
+        display: flex;
+        margin-left: none;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .mobile_details i,.mobile_details p.motto i{
+        padding-right: none;
+    }
+     .icons{
         width: 80%;
     }
 }

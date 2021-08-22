@@ -166,17 +166,10 @@ a:hover{
 }
 .about ul li{
     position: relative;
-    list-style: none;
     margin: 5px;
     align-items: center;
     justify-content: center;
 }
-.about ul li::before {
-    content: '▶';
-    display: block;
-    position: absolute;
-    left: -15px;
-  }
 /* End of About Me */
 .resume{
     display: flex;
@@ -382,6 +375,9 @@ ul.languages li{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+    .about{
+        margin-top: 40px;
     }
     p{
         font-size: 18px;

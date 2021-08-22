@@ -18,13 +18,7 @@
  body,html{
     width: 100%;
     height: 100%;
-    /* overflow-x: hidden;
-        padding:0;
-    margin:0; */
  }
-.all{
-    height: 100%;
-}
 p{
     font-size: 20px;
 }
@@ -100,13 +94,14 @@ a, .motto{
 .task1 a{
     color: white;
 }
-.all .task1{
+ .task1{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: rgb(82, 139, 141);
-    padding: 40px;
+    padding: 0;
+    margin: 0 auto;
     width: 100%;
 }
 .task1 h3{
@@ -153,6 +148,7 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+    min-height: calc(100vh - 130px);
 }
 .right-side{
     flex:1;

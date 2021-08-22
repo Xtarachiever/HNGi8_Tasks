@@ -155,25 +155,20 @@ a:hover{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    height: 350px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
 }
 .about p{
     margin-top: 10px;
 }
 .about ul{
-    height: 50px;
+    min-height: 50px;
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin-top: 10px;
-    /* flex-wrap: wrap; */
 }
 .about ul li{
     position: relative;
-    margin: 5px;
+    margin: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -383,7 +378,11 @@ ul.languages li{
         height: 100px;
     }
     .about{
-        height: 350px;
+        min-height: 350px;
+    }
+    .about ul{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media (max-width:700px) {
@@ -439,7 +438,7 @@ ul.languages li{
     .mobile_details{
         display: flex;
         flex-direction: column;
-        padding-top: 30px;
+        margin-top: 30px;
         height: 200px;
         justify-content: space-around;
         align-self: flex-start;
@@ -507,13 +506,30 @@ ul.languages li{
         color: var(--orange);
         font-weight: bold;
     }
+    .about{
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
     .about a{
         font-weight: normal;
     }
     .about ul{
-        margin-top: 60px;
+        margin-top: 80px;
     }
     .zuri  .logos{
         width: 220px;
+    }
+}
+@media (max-width:300px) {
+    .mobile_details{
+        margin-top: 100px;
+        padding-left: 0;
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .mh-professional-progress li{
+        width: 60%;
     }
 }

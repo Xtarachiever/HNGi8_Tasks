@@ -529,7 +529,7 @@ ul.languages li{
         margin-top: 80px;
     }
     .zuri  .logos{
-        min-width: 120px;
+        min-width: 60px;
     }
 }
 @media (max-width:300px) {

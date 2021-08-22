@@ -22,6 +22,13 @@
 p,li{
     font-size: 20px;
 }
+
+.icons{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 16%;
+}
 /* inputs */
 .contact_me{
     width: 100%;
@@ -169,6 +176,12 @@ a:hover{
     margin: 5px;
     align-items: center;
     justify-content: center;
+}
+.about li a{
+    color: black;
+}
+.about li a:hover{
+    color: var(--orange);
 }
 /* End of About Me */
 .resume{
@@ -346,6 +359,9 @@ ul.languages li{
     padding-top: 20px;
 }
 @media (min-width:700px) and (max-width:900px) {
+    .icons{
+        width: 20%;
+    }
     p{
         font-size: 18px;
     }
@@ -371,6 +387,9 @@ ul.languages li{
     }
 }
 @media (max-width:700px) {
+    .icons{
+        width: 22%;
+    }
     p,li{
         font-size: 18px;
     }
@@ -487,6 +506,9 @@ ul.languages li{
     a,.motto{
         color: var(--orange);
         font-weight: bold;
+    }
+    .about a{
+        font-weight: normal;
     }
     .zuri  .logos{
         width: 220px;

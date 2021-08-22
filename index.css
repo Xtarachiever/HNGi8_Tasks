@@ -268,7 +268,7 @@ ul.languages li{
     animation: bar1 2s ease-out;
 }
 .bar2{
-    width: 75%;
+    width: 60%;
     animation: bar2 2s ease-out;
 }
 .bar3{
@@ -276,7 +276,7 @@ ul.languages li{
     animation: bar3 2s ease-out;
 }
 .bar4{
-    width: 65%;
+    width: 70%;
     animation: bar4 2s ease-out;
 }
 .bar5{
@@ -511,7 +511,7 @@ ul.languages li{
         font-weight: normal;
     }
     .about ul{
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .zuri  .logos{
         width: 220px;

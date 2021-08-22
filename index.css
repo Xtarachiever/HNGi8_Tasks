@@ -85,14 +85,14 @@ a{
     text-align: center;
 }
 .zuri .logos{
-    width: 300px;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
 }
 .zuri .logos img{
-    width: 80%;
+    width: 100%;
     height: 100%;
 }
 a, .motto{
@@ -531,9 +531,10 @@ ul.languages li{
     }
     .zuri  .logos{
         width: 120px;
+        align-items: center;
     }
     .zuri .logos .img{
-        width: 30%;
+        width: 80%;
     }
 }
 @media (max-width:300px) {

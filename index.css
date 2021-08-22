@@ -510,6 +510,9 @@ ul.languages li{
     .about a{
         font-weight: normal;
     }
+    .about ul{
+        margin-top: 30px;
+    }
     .zuri  .logos{
         width: 220px;
     }

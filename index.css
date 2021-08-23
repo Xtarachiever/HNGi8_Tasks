@@ -506,7 +506,7 @@ ul.languages li{
         text-decoration:'bold'
     }
     .work_experience .category1,.category2,.category3{
-        height: auto;
+        height: 50px;
         padding-right: 0;
     }
     .zuri{
@@ -557,5 +557,8 @@ ul.languages li{
     }
      .icons{
         width: 80%;
+    }
+    .work_experience .category1,.category2,.category3{
+        height: auto;
     }
 }
